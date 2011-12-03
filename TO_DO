@@ -3,7 +3,4 @@
 #Figure out how to automatically configure and launch Mongodb when deploying
 #Figure out how to automatically call ensureIndex on Mongodb when deploying
 
-#Figure out how to deploy from git to Heroku
-
-
 

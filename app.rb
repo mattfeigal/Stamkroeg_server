@@ -3,12 +3,13 @@ require 'bundler/setup'
 
 require 'sinatra'
 require 'mongoid'
-require 'lib/checkin'
+#require 'lib/checkin'
 
 class App < Sinatra::Base
 
     set :root, File.dirname(__FILE__)
 
+    #TODO: change this to a "configure :production do" block and a "configure :development do" block
     configure do
       Mongoid.configure do |config|
         name = "stamkroeg_development"
