@@ -9,6 +9,7 @@ class Checkin
   field :coordinates, :type => Array, :default => []
 
   index [[ 'coordinates', Mongo::GEO2D ]], :min => -180, :max => 180 # create 2d index
+  
 
   scope :within, lambda { |options|
     # divide by 111 because stackoverflow says so

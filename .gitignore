@@ -1,0 +1,9 @@
+
+# MongoDB database files #
+##########################
+sk_db/
+
+# OS generated files #
+######################
+.DS-Store*
+Thumbs.db
