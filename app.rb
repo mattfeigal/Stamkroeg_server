@@ -4,7 +4,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'mongoid'
 require 'uri'
-require 'lib/checkin'
+require './lib/checkin'
 
 class App < Sinatra::Base
 
