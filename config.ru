@@ -1,6 +1,4 @@
-require 'rubygems'
+$:.unshift File.dirname(__FILE__)
 
-root = ::File.dirname(__FILE__)
-
-require './app'
+require 'app'
 run App

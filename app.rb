@@ -1,8 +1,6 @@
-require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
+Bundler.require(:default)
 
-require 'sinatra'
-require 'mongoid'
 require 'uri'
 require './lib/checkin'
 
@@ -18,9 +16,8 @@ class App < Sinatra::Base
         config.persist_in_safe_mode = false        
       end
 
-      set :environment, :develop
       set :dump_errors, true
-      set :haml, { :ugly=>true }
+      set :haml, { :ugly => true }
       set :clean_trace, true
     end
     
@@ -30,9 +27,8 @@ class App < Sinatra::Base
         config.persist_in_safe_mode = false        
       end
 
-      set :environment, :production
       set :dump_errors, true
-      set :haml, { :ugly=>true }
+      set :haml, { :ugly => true }
       set :clean_trace, true
     end
     
@@ -51,6 +47,4 @@ class App < Sinatra::Base
         :name => params[:name]
       )
     end
-
-    
 end
